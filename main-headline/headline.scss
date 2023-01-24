@@ -1,0 +1,135 @@
+.headline {
+  background-color: $color-bg;
+  .container {
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+  }
+  .wrap {
+    position: relative;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 73px;
+    margin-bottom: 40px;
+  }
+  &__description {
+    font-size: 50px;
+    line-height: 61px;
+    max-width: 600px;
+    margin-bottom: 200px;
+  }
+  &__img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+}
+
+@include height-up {
+  .headline {
+    .container {
+      height: 750px;
+    }
+  }
+}
+
+@include for-large-down {
+  .headline {
+    &__title {
+      font-size: 55px;
+    }
+    &__description {
+      font-size: 45px;
+    }
+    &__img {
+      top: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .headline {
+    &__img {
+      width: 760px;
+      top: 80px;
+    }
+  }
+}
+
+@include for-notebook-down {
+  .headline {
+    &__title {
+      font-size: $size-text-title-desc;
+      line-height: 63px;
+    }
+    &__description {
+      font-size: 40px;
+      line-height: 51px;
+    }
+    &__img {
+      width: 640px;
+    }
+  }
+}
+
+@include for-sm-notebook-down {
+  .headline {
+    .container {
+      height: auto;
+      padding-bottom: 100px;
+    }
+    &__title {
+      text-align: center;
+      margin: 140px auto 40px auto;
+      font-size: 45px;
+      line-height: 50px;
+    }
+    &__description {
+      max-width: 100%;
+      font-size: 35px;
+      line-height: 35px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    &__img {
+      position: static;
+      width: 100%;
+      margin-bottom: 60px;
+    }
+    .order-btn {
+      margin: 0 auto;
+    }
+  }
+}
+
+@include for-tablet-down {
+  .headline {
+    .container {
+      padding-bottom: 50px;
+    }
+    &__title {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    &__description {
+      font-size: 26px;
+    }
+    &__img {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@include for-horizontal-mb-down {
+  .headline {
+    &__title {
+      font-size: 24px;
+    }
+    &__description {
+      font-size: 18px;
+    }
+  }
+}

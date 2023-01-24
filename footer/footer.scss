@@ -1,0 +1,278 @@
+.footer {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  padding: 20px;
+  color: #dbf1f6;
+  background-color: #272343;
+  &__logo {
+    .footer-logo {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 44px;
+      text-decoration: none;
+      margin-bottom: 20px;
+      color: #dbf1f6;
+    }
+    .copywriting {
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 20px;
+    }
+  }
+  &__info {
+    display: flex;
+    margin-right: auto;
+    .info,
+    .useful-link {
+      display: flex;
+      flex-direction: column;
+    }
+    .info {
+      &:first-child {
+        margin: 0 100px;
+      }
+      &__title {
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      &__link {
+        margin-top: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #f1f6ff;
+        text-decoration: none;
+      }
+    }
+  }
+  .social-media {
+    &__title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 44px;
+    }
+    .group-media {
+      &__link {
+        display: inline-block;
+        text-decoration: none;
+        margin-right: 30px;
+        width: 30px;
+        height: 30px;
+      }
+      &__facebook {
+        background-image: url(img/footer/fb.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &__telegram {
+        background-image: url(img/footer/tg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &__instagram {
+        margin-right: 0;
+        background-image: url(img/footer/insta.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+.footer-mob {
+  display: none;
+}
+
+@include for-notebook-down {
+  .footer {
+    .footer-logo {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .payment-methods img {
+      width: 35px;
+    }
+    .copywriting {
+      margin-top: 10px;
+    }
+    &__info {
+      margin: 0 auto;
+      .info {
+        &:first-child {
+          margin: 0 50px 0 0px;
+        }
+        &__title {
+          font-size: 18px;
+          line-height: 20px;
+        }
+        &__link {
+          font-size: 14px;
+          line-height: 16px;
+          color: #f1f6ff;
+          text-decoration: none;
+        }
+      }
+    }
+    .social-media {
+      &__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 15px;
+      }
+      .group-media {
+        &__link {
+          display: inline-block;
+          text-decoration: none;
+          margin-right: 20px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+@include for-sm-notebook-down {
+  .footer {
+    display: none;
+  }
+  .footer-mob {
+    display: block;
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    padding: 20px 0;
+    color: #dbf1f6;
+    background-color: #272343;
+    &__part-left {
+      width: calc(50% - 6px);
+    }
+    &__part-right {
+      width: calc(50% - 6px);
+    }
+    &__logo {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-weight: 600;
+      font-size: 30px;
+      color: #dbf1f6;
+      text-decoration: none;
+    }
+    .payment-methods {
+      margin-bottom: 24px;
+      img {
+        width: 34px;
+      }
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      &-title {
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 24px;
+      }
+      &-link {
+        margin-top: 5px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        color: #f1f6ff;
+        text-decoration: none;
+      }
+    }
+    .copywriting {
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 30px;
+    }
+    .social-media {
+      margin-bottom: 25px;
+      &__title {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 15px;
+      }
+      .group-media {
+        &__link {
+          display: inline-block;
+          text-decoration: none;
+          margin-right: 20px;
+          width: 25px;
+          height: 25px;
+        }
+        &__facebook {
+          background-image: url(img/footer/fb.png);
+          background-size: cover;
+        }
+        &__telegram {
+          background-image: url(img/footer/tg.png);
+          background-size: cover;
+        }
+        &__instagram {
+          margin-right: 0;
+          background-image: url(img/footer/insta.png);
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+@include for-tablet-down {
+  .footer-mob {
+    &__part-left {
+      width: calc(50% - 5px);
+    }
+    &__part-right {
+      width: calc(50% - 5px);
+    }
+    &__logo {
+      font-size: 20px;
+    }
+    .payment-methods {
+      img {
+        width: 26px;
+      }
+    }
+    &__info {
+      &-title {
+        font-size: 12px;
+        line-height: 12px;
+      }
+      &-link {
+        font-size: 10px;
+        line-height: 13px;
+      }
+    }
+    .copywriting {
+      font-size: 10px;
+      line-height: 13px;
+    }
+    .social-media {
+      margin-bottom: 16px;
+      &__title {
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 5px;
+      }
+      .group-media {
+        &__link {
+          display: inline-block;
+          text-decoration: none;
+          margin-right: 15px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}

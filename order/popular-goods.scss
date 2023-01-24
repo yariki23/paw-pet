@@ -1,0 +1,21 @@
+.popular-goods {
+  padding: 120px 0 60px;
+  background-color: rgba(241, 246, 255, 1);
+  .container {
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    color: $main-text-color;
+    text-align: center;
+  }
+
+  &__slider {
+    display: flex;
+    margin: 0 auto;
+  }
+}

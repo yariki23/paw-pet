@@ -1,0 +1,45 @@
+.order-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 343px;
+  height: 70px;
+  color: $secondary-text-color;
+  background: #ef4665;
+  border-radius: 20px;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+}
+
+//header burger-menu, bag-shop styles
+
+.btn-header {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #dbf1f6;
+  cursor: pointer;
+  &:hover {
+    background-color: $main-text-color
+  }
+}
+
+@include for-notebook-down {
+  .order-btn {
+    width: 287px;
+    height: 70px;
+    padding: 0;
+    font-size: 24px;
+  }
+}
+
+@include for-horizontal-mb-down {
+  .order-btn {
+    width: 164px;
+    height: 40px;
+    font-size: 16px;
+  }
+}

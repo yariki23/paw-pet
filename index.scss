@@ -1,0 +1,47 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'breakpoint.scss';
+@import './buttons.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+html {
+  font-family: $main-text-family;
+  color: $main-text-color;
+  font-size: $main-size-text;
+  font-weight: $main-text-weight;
+  scroll-margin-top: 100vh;
+  height: 100%;
+}
+body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  max-width: 100%;
+  padding: 0 20px;
+}
+// @media screen and (max-width: 1400px) {
+// }
+@include for-large-up {
+  .container {
+    width: 1650px;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@import 'announcement-bar/announcement-bar.scss';
+@import 'header/header.scss';
+@import 'main-headline/headline.scss';
+@import 'how-shopify/how-shopify.scss';
+@import 'products/products.scss';
+@import 'best-present/best-present.scss';
+@import 'main-reviews/main-reviews.scss';
+@import 'footer/footer.scss';
+@import 'our-process/our-process.scss';
+@import 'order/card-product.scss';
+@import 'order/popular-goods.scss';
+@import 'shops/shops.scss';

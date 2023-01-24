@@ -1,0 +1,248 @@
+.how-shopify {
+  padding: 130px 0;
+  &__main-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    margin: 80px 0 40px;
+  }
+  &__main-subtitle {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 22px;
+  }
+  .container {
+    justify-content: space-around;
+  }
+  &__card {
+    text-align: center;
+    margin: 0 20px;
+  }
+  &__img {
+    height: 200px;
+  }
+  &__step {
+    margin: 64px auto 16px;
+    line-height: 103px;
+    width: 103px;
+    background-color: $main-text-color;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 60px;
+    font-weight: 500;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 44px;
+  }
+  &__description {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #e90000;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@include for-large-down {
+  .how-shopify {
+    padding: 110px 0;
+    .container {
+      justify-content: space-around;
+    }
+    &__card {
+      text-align: center;
+      margin: 0 20px;
+    }
+    &__img {
+      height: 200px;
+    }
+    &__step {
+      margin: 64px auto 16px;
+      line-height: 103px;
+      width: 103px;
+      background-color: $main-text-color;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 60px;
+      font-weight: 500;
+    }
+    &__title {
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 44px;
+    }
+    &__description {
+      margin-bottom: 20px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__link {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #e90000;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@include for-notebook-down {
+  .how-shopify {
+    padding: 90px 0;
+    &__main-title {
+      font-size: 40px;
+      margin: 50px 0 20px;
+    }
+    &__main-subtitle {
+      text-align: center;
+      margin-bottom: 60px;
+      font-size: 18px;
+    }
+    &__img {
+      height: 200px;
+    }
+    &__step {
+      margin-top: 54px;
+      line-height: 80px;
+      width: 80px;
+      font-size: 50px;
+    }
+    &__title {
+      font-size: 26px;
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &__link {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+
+@include for-sm-notebook-down {
+  .how-shopify {
+    padding: 80px 0;
+    &__img {
+      height: 170px;
+    }
+    &__step {
+      margin-top: 35px;
+      line-height: 60px;
+      width: 60px;
+      font-size: 40px;
+    }
+    &__title {
+      font-size: 22px;
+    }
+    &__description {
+      font-size: 13px;
+      line-height: 16px;
+    }
+    &__link {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+}
+
+@include for-tablet-down {
+  .how-shopify {
+    padding: 50px 0;
+    &__main-title {
+      font-size: 30px;
+      margin: 80px 0 20px;
+    }
+    &__main-subtitle {
+      margin-bottom: 30px;
+      font-size: 15px;
+    }
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__card {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 0 60px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .wrap-img {
+      max-width: 50%;
+      margin-right: 20px;
+    }
+    .wrap-info {
+      max-width: 50%;
+    }
+    &__img {
+      height: 200px;
+    }
+    &__step {
+      margin-top: 0;
+    }
+    &__card:nth-child(2) {
+      flex-direction: row-reverse;
+      .wrap-img {
+        margin-left: 20px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include for-horizontal-mb-down {
+  .how-shopify {
+    padding: 30px 0;
+    &__main-title {
+      font-size: 20px;
+      margin: 100px 0 20px;
+    }
+    &__main-subtitle {
+      margin-bottom: 30px;
+      font-size: 12px;
+    }
+    &__img {
+      height: auto;
+      width: 100%;
+    }
+    &__step {
+      line-height: 35px;
+      width: 35px;
+      font-size: 20px;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__description {
+      font-size: 10px;
+      line-height: 12px;
+    }
+    &__link {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+}

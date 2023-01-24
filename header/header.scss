@@ -1,0 +1,78 @@
+.header {
+  position: absolute;
+  top: 28px;
+  background-color: $color-bg;
+  width: 100%;
+  z-index: 3;
+  .container {
+    align-items: center;
+    .burger-menu {
+      display: none;
+    }
+    .logo {
+      &__link {
+        font-weight: 600;
+        font-size: $size-text-title-desc;
+        text-decoration: none;
+        color: $main-text-color;
+        flex-grow: 1;
+      }
+    }
+    .navigation {
+      display: flex;
+      justify-content: space-evenly;
+      flex-grow: 3;
+      margin: 0 10%;
+      &__link {
+        font-size: 18px;
+        color: $main-text-color;
+        text-decoration: none;
+        &:hover {
+          color: $secondary-color-bg;
+        }
+      }
+    }
+    .shop-bag {
+      margin: 10px auto 10px 0;
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  padding-top: 0;
+  background-color: $color-bg;
+}
+
+@include for-sm-notebook-down {
+  .header {
+    .container {
+      .burger-menu {
+        display: block;
+      }
+      .navigation {
+        display: none;
+      }
+      .logo {
+        flex-grow: 0;
+        margin: 0 auto;
+      }
+      .shop-bag {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include for-horizontal-mb-down {
+  .header {
+    .container {
+      .logo {
+        &__link {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
